@@ -1,8 +1,51 @@
-.intro {
+.intro-container {
   display: flex;
-  flex-direction: row; }
-  .intro-container {
-    justify-content: center; }
+  flex-direction: row;
+  height: 70vh; }
+
+.intro-subcontainer {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden; }
+
+.intro-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5em; }
+
+.intro-text-title {
+  font-size: 3em;
+  text-align: left; }
+
+.intro-text-body {
+  font-size: 1.5em;
+  text-align: left; }
+
+.intro-profile-container {
+  display: flex;
+  align-items: flex-start; }
+
+.intro-profile-picture {
+  width: 50vw;
+  height: auto; }
+
+.intro-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px; }
+
+.intro-links-icon-container {
+  height: 40px;
+  width: 50px; }
+
+.intro-links-url {
+  padding-left: 10px; }
 
 .App {
   text-align: center; }
@@ -10,6 +53,9 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px; }
+
+.fa-github, .fa-envelope-o, .fa-linkedin {
+  opacity: 0.6; }
 
 .App-header {
   background-color: #222;

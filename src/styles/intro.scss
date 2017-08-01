@@ -1,8 +1,60 @@
-
 .intro {
-  display: flex;
-  flex-direction: row;
   &-container {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+  }
+  &-subcontainer {
+    width: 50vw;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+
+.intro-text {
+  &-container {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5em;
+  }
+  &-title {
+    font-size: 3em;
+    text-align: left;
+  }
+  &-body {
+    font-size: 1.5em;
+    text-align: left;
+  }
+}
+
+.intro-profile {
+  &-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  &-picture {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+.intro-links {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  &-icon-container {
+    height: 40px;
+    width: 50px;
+  }
+  &-url {
+    padding-left: 10px;
   }
 }
