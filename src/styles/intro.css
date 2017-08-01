@@ -1,0 +1,7 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+.intro-container {
+  justify-content: center;
+}

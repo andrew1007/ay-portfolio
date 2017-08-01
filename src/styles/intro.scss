@@ -1,0 +1,8 @@
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  &-container {
+    justify-content: center;
+  }
+}
