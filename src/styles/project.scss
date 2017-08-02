@@ -2,13 +2,25 @@
 
 .project {
   &-container {
-    @include flex-row;
-    height: 70vh;
+    @include flex-column;
+    height: 90vh;
+    width: 35vw;
   }
   &-subcontainer {
     @include flex-column;
-    min-width: 50vw;
-    @include flex-center;
+    width: 50vw;
+    height: 50%;
+    align-items: flex-start;
     overflow: hidden;
+    margin: 20px;
+  }
+  &-subcontainer:last-child{
+    margin-top: 0px;
+  }
+}
+
+.project-image {
+  &-picture {
+    width: 130%;
   }
 }

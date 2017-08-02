@@ -49,16 +49,24 @@
 
 .project-container {
   display: flex;
-  flex-direction: row;
-  height: 70vh; }
+  flex-direction: column;
+  height: 90vh;
+  width: 35vw; }
 
 .project-subcontainer {
   display: flex;
   flex-direction: column;
-  min-width: 50vw;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
+  width: 50vw;
+  height: 50%;
+  align-items: flex-start;
+  overflow: hidden;
+  margin: 20px; }
+
+.project-subcontainer:last-child {
+  margin-top: 0px; }
+
+.project-image-picture {
+  width: 130%; }
 
 .App {
   text-align: center; }

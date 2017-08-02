@@ -1,16 +1,20 @@
-import React, {Component} from 'react'
+import React from 'react'
+import ProjectImage from './project_image'
+import ProjectText from './project_text'
 
-export default class Project extends Component {
-  render() {
-    return (
-      <div className="project-container">
-        <div className="project-subcontainer">
-          <div>asdfasdf</div>
-        </div>
-        <div className="project-subcontainer">
-          <div>asdfasdf</div>
-        </div>
+const Project = (props) => {
+  return (
+    <div className="project-container">
+      <div className="project-subcontainer">
+        <ProjectImage
+          image={props.image}
+          />
       </div>
-    )
-  }
+      <div className="project-subcontainer">
+        <ProjectText description={props.description}/>
+      </div>
+    </div>
+  )
 }
+
+export default Project
