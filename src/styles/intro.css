@@ -6,17 +6,17 @@
 .intro-subcontainer {
   width: 50vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   overflow: hidden; }
 
 .intro-text-container {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-direction: column;
-  padding: 5em; }
+  padding: 5em 5em 2em 5em; }
 
 .intro-text-title {
   font-size: 3em;
@@ -31,8 +31,8 @@
   align-items: flex-start; }
 
 .intro-profile-picture {
-  width: 50vw;
-  height: auto; }
+  border-radius: 50vw;
+  width: 90%; }
 
 .intro-links-container {
   display: flex;

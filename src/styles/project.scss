@@ -1,0 +1,14 @@
+@import './mixins.scss';
+
+.project {
+  &-container {
+    @include flex-row;
+    height: 70vh;
+  }
+  &-subcontainer {
+    @include flex-column;
+    min-width: 50vw;
+    @include flex-center;
+    overflow: hidden;
+  }
+}

@@ -1,26 +1,24 @@
+@import './mixins.scss';
+
 .intro {
   &-container {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     height: 70vh;
   }
   &-subcontainer {
     width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column
+    @include flex-center
     overflow: hidden;
   }
 }
 
 .intro-text {
   &-container {
-    display:flex;
+    @include flex-column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
-    padding: 5em;
+    padding: 5em 5em 2em 5em;
   }
   &-title {
     font-size: 3em;
@@ -38,8 +36,8 @@
     align-items: flex-start;
   }
   &-picture {
-    width: 50vw;
-    height: auto;
+    border-radius: 50vw;
+  	width: 90%;
   }
 }
 
