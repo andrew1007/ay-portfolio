@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Links = props => {
+const Links = (props) => {
 
   const githubLink = "https://github.com/andrew1007"
   const linkedInLink = "https://www.linkedin.com/in/andrewyueh/"

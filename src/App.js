@@ -4,6 +4,7 @@ import './styles/App.css';
 import Intro from './components/intro/intro'
 import Project from './components/project/project'
 import InterestMe from './components/project_description/interest_me'
+import Skills from './components/skills/skills'
 
 class App extends Component {
   // <Intro/>
@@ -17,7 +18,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <i className="icon-ruby-on-rails"></i>
+        <Skills/>
         <Project image={"interest_me.jpg"} description={<InterestMe/>}/>
       </div>
     );

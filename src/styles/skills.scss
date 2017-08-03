@@ -2,6 +2,8 @@
 
 .skills {
   &-container {
+    width: 99vw;
     @include flex-row;
+    @include flex-center;
   }
 }

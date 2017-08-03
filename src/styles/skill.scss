@@ -3,12 +3,15 @@
 .skill {
   &-container {
     @include flex-column;
+    @include flex-center;
+    padding: 50px;
   }
   &-icon-container {
     display: flex;
     @include flex-center;
   }
   &-name-container {
+    padding-top: 20px;
     display: flex;
     @include flex-center;
   }
