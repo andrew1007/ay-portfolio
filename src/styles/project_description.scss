@@ -1,0 +1,13 @@
+@import './mixins.scss';
+
+.project_description-interest-me {
+  &-ul-container {
+    @include flex-column;
+    @include flex-center;
+  }
+  &-ul {
+    @include flex-column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

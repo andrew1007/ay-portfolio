@@ -12,12 +12,14 @@ const InterestMe = () => (
         my core web development principles, layered into one web app.
         Its stack is:
       </p>
-      <ul>
-        <li>Rails Backend</li>
-        <li>React.js/Redux Frontend</li>
-        <li>PostgreSQL database</li>
-        <li>SASS/CSS styling</li>
-      </ul>
+      <div className="project_description-interest-me-ul-container">
+        <ul className="project_description-interest-me-ul">
+          <li>Rails Backend</li>
+          <li>React.js/Redux Frontend</li>
+          <li>PostgreSQL database</li>
+          <li>SASS/CSS styling</li>
+        </ul>
+      </div>
   </div>
 )
 

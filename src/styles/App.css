@@ -19,11 +19,11 @@
   padding: 5em 5em 2em 5em; }
 
 .intro-text-title {
-  font-size: 3em;
+  font-size: 20px;
   text-align: left; }
 
 .intro-text-body {
-  font-size: 1.5em;
+  font-size: 15px;
   text-align: left; }
 
 .intro-profile-container {
@@ -51,12 +51,11 @@
   display: flex;
   flex-direction: column;
   height: 90vh;
-  width: 35vw; }
+  width: 40vw; }
 
 .project-subcontainer {
   display: flex;
   flex-direction: column;
-  width: 50vw;
   height: 50%;
   align-items: flex-start;
   overflow: hidden;
@@ -67,6 +66,18 @@
 
 .project-image-picture {
   width: 130%; }
+
+.project_description-interest-me-ul-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.project_description-interest-me-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
 
 .App {
   text-align: center; }

@@ -1,0 +1,18 @@
+@import './mixins.scss';
+
+.skill {
+  &-container {
+    @include flex-column;
+  }
+  &-icon-container {
+    display: flex;
+    @include flex-center;
+  }
+  &-name-container {
+    display: flex;
+    @include flex-center;
+  }
+  &-name {
+    font-size: 20px;
+  }
+}

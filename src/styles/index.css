@@ -1,8 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  color: rgba(0, 0, 0, 0.8); }
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px; }
 
 a, a:visited {
   text-decoration: none;
