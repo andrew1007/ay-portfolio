@@ -14,3 +14,5 @@ const Skill = (props) => {
     </div>
   )
 }
+
+export default Skill

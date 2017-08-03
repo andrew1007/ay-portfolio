@@ -17,6 +17,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <i className="icon-ruby-on-rails"></i>
         <Project image={"interest_me.jpg"} description={<InterestMe/>}/>
       </div>
     );
