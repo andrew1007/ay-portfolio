@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './styles/App.css';
 import Intro from './components/intro/intro'
-import Project from './components/project/project'
-import InterestMe from './components/project_description/interest_me'
-import Skills from './components/skills/skills'
+import Skills from './components/containers/skills'
+import Projects from './components/containers/projects'
 
 class App extends Component {
   // <Intro/>
@@ -19,7 +18,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Skills/>
-        <Project image={"interest_me.jpg"} description={<InterestMe/>}/>
+        <Projects/>
       </div>
     );
   }
