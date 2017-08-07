@@ -2,7 +2,8 @@
 
 .containers {
   &-projects-container {
-    @include flex-row;
     @include flex-center;
+    @include flex-row;
+    flex-wrap: wrap;
   }
 }

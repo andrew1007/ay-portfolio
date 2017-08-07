@@ -113,10 +113,11 @@
   flex-wrap: wrap; }
 
 .containers-projects-container {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap; }
 
 .App {
   text-align: center; }
@@ -142,9 +143,3 @@
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
-
-/*.intro-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}*/

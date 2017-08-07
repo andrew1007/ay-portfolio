@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import IntroText from './intro_text'
 import Links from './links'
 import ProfilePicture from './profile_picture'
