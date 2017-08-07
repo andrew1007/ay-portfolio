@@ -38,10 +38,22 @@ const Links = (props) => {
     </div>
   )
 
+  const resume = () => (
+    <div className="intro-links-container">
+      <a href={require('../../images/resume.pdf')} className="intro-links-icon-container">
+        <i className="fa fa-file-pdf-o fa-2x resume" aria-hidden="true"></i>
+      </a>
+      <a target="_blank" href={require('../../images/resume.pdf')}>
+        <span className="intro-links-url">Resume</span>
+      </a>
+    </div>
+  )
+
   return (
     <div>
       {github()}
       {linkedIn()}
+      {resume()}
       {email()}
     </div>
   )

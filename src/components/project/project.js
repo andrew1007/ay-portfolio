@@ -9,7 +9,7 @@ const Project = (props) => {
         { props.image ? <ProjectImage image={props.image}/> : null }
       </div>
       <div className="project-subcontainer">
-        <ProjectText description={props.description}/>
+        { props.description ? <ProjectText description={props.description}/> : null }
       </div>
     </div>
   )

@@ -49,10 +49,13 @@
     padding: 10px;
   }
   &-icon-container {
-    height: 40px;
     width: 50px;
   }
   &-url {
     padding-left: 10px;
   }
+}
+
+.resume {
+  opacity: .75; //the resume icon was strangely dark...
 }

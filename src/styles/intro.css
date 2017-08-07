@@ -41,8 +41,10 @@
   padding: 10px; }
 
 .intro-links-icon-container {
-  height: 40px;
   width: 50px; }
 
 .intro-links-url {
   padding-left: 10px; }
+
+.resume {
+  opacity: .75; }
