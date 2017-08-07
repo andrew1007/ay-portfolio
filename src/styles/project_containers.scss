@@ -1,0 +1,8 @@
+@import './mixins.scss';
+
+.containers {
+  &-projects-container {
+    @include flex-row;
+    @include flex-center;
+  }
+}

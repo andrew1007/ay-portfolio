@@ -10,7 +10,7 @@ allSkills.set("Sass",  <i className="icon-sass" style={style}></i>)
 allSkills.set("Ruby", <i className="icon-ruby" style={style}></i>)
 allSkills.set("PostgreSQL",  <i className="icon-postgres" style={style}></i>)
 
-const Skills = () => {
+const SkillsContainer = () => {
     let skillArray = []
     let component
     for (let [skill, icon] of allSkills) {
@@ -28,4 +28,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default SkillsContainer
