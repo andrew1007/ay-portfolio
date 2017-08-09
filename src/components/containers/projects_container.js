@@ -23,12 +23,14 @@ const ProjectsContainer = () => {
     description = <Project key={image} image={image} description={component}/>
     projectArray = [...projectArray, description]
   }
+  
   if (projectArray.length % 2 !== 0) {
     const filler = <Project key={'fill'}
       image={null}
       description={<FillerDescription/>}/>
     projectArray = [...projectArray, filler]
   }
+
   return (
     <div className='containers-projects-container'>
       {projectArray}
