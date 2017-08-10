@@ -1,7 +1,8 @@
 .intro-container {
   display: flex;
   flex-direction: row;
-  height: 75vh; }
+  height: 75vh;
+  min-height: 620px; }
 
 .intro-subcontainer {
   width: 50vw;

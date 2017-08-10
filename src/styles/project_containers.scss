@@ -3,6 +3,10 @@
 .containers {
   &-projects-container {
     @include flex-center;
+    @include flex-column;
+  }
+  &-individual-projects {
+    @include flex-center;
     @include flex-row;
     flex-wrap: wrap;
   }

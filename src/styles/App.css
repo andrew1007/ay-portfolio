@@ -2,7 +2,8 @@
 .intro-container {
   display: flex;
   flex-direction: row;
-  height: 75vh; }
+  height: 75vh;
+  min-height: 620px; }
 
 .intro-subcontainer {
   width: 50vw;
@@ -55,21 +56,28 @@
   display: flex;
   flex-direction: column;
   height: 90vh;
-  width: 40vw; }
+  width: 40vw;
+  padding: 20px; }
 
-.project-subcontainer {
+.project-subcontainer, .project-subcontainer-image, .project-subcontainer-text {
   display: flex;
   flex-direction: column;
-  height: 50%;
   align-items: flex-start;
-  overflow: hidden;
   margin: 20px; }
+  .project-subcontainer-image {
+    height: 50%;
+    max-height: 315px;
+    overflow: hidden;
+    min-height: 340px; }
 
-.project-subcontainer:last-child {
+.project-subcontainer:last-child, .project-subcontainer-image:last-child, .project-subcontainer-text:last-child {
   margin-top: 0px; }
 
 .project-image-picture {
-  width: 130%; }
+  min-height: 340px; }
+
+.project-image-container {
+  min-width: 310px; }
 
 .project_description-interest-me-ul-container {
   display: flex;
@@ -83,26 +91,18 @@
   align-items: flex-start;
   justify-content: center; }
 
-.skill-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px; }
-
-.skill-icon-container {
+.skill, .skill-container, .skill-icon-container, .skill-name-container {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.skill-name-container {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.skill-name {
-  font-size: 20px; }
+  .skill-container {
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 0px; }
+  .skill-name-container {
+    padding-top: 20px; }
+  .skill-name {
+    font-size: 20px; }
 
 .skills-container {
   display: flex;
@@ -116,6 +116,12 @@
   flex-wrap: wrap; }
 
 .containers-projects-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.containers-individual-projects {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -163,17 +169,15 @@
 .intro-container {
   padding-top: 40px; }
 
-.hidden-true {
+.hidden, .hidden-true, .hidden-false {
   padding-top: 40px;
-  opacity: 0;
-  transition: opacity 500ms ease-out;
   animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1); }
-
-.hidden-false {
-  padding-top: 40px;
-  opacity: 1;
-  transition: opacity 750ms ease-in;
-  animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1); }
+  .hidden-true {
+    transition: opacity 500ms ease-out;
+    opacity: 0; }
+  .hidden-false {
+    opacity: 1;
+    transition: opacity 750ms ease-in; }
 
 .App-intro {
   font-size: large; }

@@ -4,6 +4,7 @@
   &-container {
     @include flex-row;
     height: 75vh;
+    min-height: 620px;
   }
   &-subcontainer {
     width: 50vw;

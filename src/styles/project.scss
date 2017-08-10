@@ -5,21 +5,33 @@
     @include flex-column;
     height: 90vh;
     width: 40vw;
+    padding: 20px;
   }
   &-subcontainer {
     @include flex-column;
-    height: 50%;
     align-items: flex-start;
-    overflow: hidden;
     margin: 20px;
+    &-image {
+      @extend .project-subcontainer;
+      height: 50%;
+      max-height: 315px;
+      overflow: hidden;
+      min-height: 340px;
+    }
+    &-text {
+      @extend .project-subcontainer;
+    }
   }
-  &-subcontainer:last-child{
+  &-subcontainer:last-child {
     margin-top: 0px;
   }
 }
 
 .project-image {
   &-picture {
-    width: 130%;
+    min-height: 340px;
+  }
+  &-container {
+    min-width: 310px;
   }
 }

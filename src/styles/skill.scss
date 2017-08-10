@@ -1,19 +1,20 @@
 @import './mixins.scss';
 
 .skill {
+  display: flex;
+  @include flex-center;
   &-container {
-    @include flex-column;
-    @include flex-center;
+    flex-direction: column;
+    @extend .skill;
     padding: 50px;
+    padding-bottom: 0px;
   }
   &-icon-container {
-    display: flex;
-    @include flex-center;
+    @extend .skill;
   }
   &-name-container {
     padding-top: 20px;
-    display: flex;
-    @include flex-center;
+    @extend .skill;
   }
   &-name {
     font-size: 20px;

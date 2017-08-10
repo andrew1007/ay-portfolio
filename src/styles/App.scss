@@ -32,17 +32,17 @@
 }
 
 .hidden {
+  padding-top: 40px;
+  animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1.000);
   &-true {
-    padding-top: 40px;
-    opacity: 0;
+    @extend .hidden;
     transition: opacity 500ms ease-out;
-    animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1.000);
+    opacity: 0;
   }
   &-false {
-    padding-top: 40px;
+    @extend .hidden;
     opacity: 1;
     transition: opacity 750ms ease-in;
-    animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1.000);
   }
 }
 

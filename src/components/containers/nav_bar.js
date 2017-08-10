@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBarLink from '../nav_bar_link/nav_bar_link'
+import Scroll from 'react-scroll'
 
 const links = new Map ()
 //keys are nav bar names
@@ -9,12 +10,14 @@ links.set("Skills", "skills-container")
 links.set("Projects", "projects-container")
 
 const NavBar = () => {
-
+  const Link = Scroll.Link
   const navLinks = Array.from(links).map(([title, tagId]) => {
     return (
-      <span className="navbar-link">
-        <NavBarLink title={title} tagId={tagId}/>
-      </span>
+      <Link to={tagId} smooth={true} duration={500} offset={-50}>
+        <span className="navbar-link">
+          <NavBarLink title={title} tagId={tagId}/>
+        </span>
+      </Link>
     )
 
   })
@@ -22,11 +25,11 @@ const NavBar = () => {
   return (
     <nav className="navbar-container">
       <span className="navbar-link-container">
-        <span className="navbar-link">
           <a target="_blank" href={require('../../images/resume.pdf')}>
-          Resume
+          <span className="navbar-link">
+            Resume
+        </span>
         </a>
-      </span>
         {navLinks}
       </span>
     </nav>

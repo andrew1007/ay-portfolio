@@ -31,7 +31,12 @@ const ProjectsContainer = () => {
 
   return (
     <div className='containers-projects-container'>
-      {projectArray}
+        <h1>
+          Things I've made
+        </h1>
+        <div className="containers-individual-projects">
+          {projectArray}
+        </div>
     </div>
   )
 }
