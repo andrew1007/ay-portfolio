@@ -19,17 +19,19 @@ const NavBar = () => {
         </span>
       </Link>
     )
-
   })
+
+  const resume =
+    <a target="_blank" href={require('../../images/resume.pdf')}>
+      <span className="navbar-link">
+        Resume
+      </span>
+    </a>
 
   return (
     <nav className="navbar-container">
       <span className="navbar-link-container">
-          <a target="_blank" href={require('../../images/resume.pdf')}>
-          <span className="navbar-link">
-            Resume
-        </span>
-        </a>
+        {resume}
         {navLinks}
       </span>
     </nav>
