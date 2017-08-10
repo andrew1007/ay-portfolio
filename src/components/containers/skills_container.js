@@ -11,18 +11,16 @@ allSkills.set("Ruby", <i className="icon-ruby" style={style}></i>)
 allSkills.set("PostgreSQL",  <i className="icon-postgres" style={style}></i>)
 
 const SkillsContainer = () => {
-  let skillArray = []
-  let component
-  for (let [skill, icon] of allSkills) {
-    component = <Skill key={skill} icon={icon} name={skill}/>
-    skillArray = [...skillArray, component]
-  }
+
+  const skillsArray = Array.from(allSkills).map(([name, skill]) => {
+    return <Skill key={name} icon={skill} name={name}/>
+  })
 
   return (
     <div className="skills-container">
       <h1>Here are some things I know</h1>
       <div className="skills-entries-container">
-        {skillArray}
+        {skillsArray}
       </div>
     </div>
   )

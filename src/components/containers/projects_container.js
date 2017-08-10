@@ -17,13 +17,9 @@ allProjects.set(<Portfolio/>, null)
 allProjects.set(<HayaSushi/>, "haya_sushi.jpg")
 
 const ProjectsContainer = () => {
-  let projectArray = []
-  let description
-  for (let [component, image] of allProjects) {
-    description = <Project key={image} image={image} description={component}/>
-    projectArray = [...projectArray, description]
-  }
-  
+  let projectArray = Array.from(allProjects).map(([component, image]) => {
+    return <Project key={image} image={image} description={component}/>
+  })
   if (projectArray.length % 2 !== 0) {
     const filler = <Project key={'fill'}
       image={null}

@@ -7,12 +7,11 @@ links.set("Skills", "skills-container")
 links.set("Projects", "projects-container")
 
 const NavBar = () => {
-  let component
-  let navLinks = []
-  for (let link of links) {
-    component = <NavBarLink title={link[0]} tagId={link[1]}/>
-    navLinks = [...navLinks, component]
-  }
+
+  const navLinks = Array.from(links).map(([title, tagId]) => {
+    return <NavBarLink title={title} tagId={tagId}/>
+  })
+
   return (
     <nav>
       {navLinks}
