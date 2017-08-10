@@ -137,6 +137,16 @@
   padding: 20px;
   color: white; }
 
+.hidden-true {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+  animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1); }
+
+.hidden-false {
+  opacity: 1;
+  transition: opacity 750ms ease-in;
+  animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1); }
+
 .App-intro {
   font-size: large; }
 
