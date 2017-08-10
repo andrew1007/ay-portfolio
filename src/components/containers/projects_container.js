@@ -10,6 +10,8 @@ import Portfolio from '../project_description/portfolio'
 
 const allProjects = new Map ()
 //directory of image file is abstracted out. see src/project/project_image.js
+//keys are texts components
+//values are images
 allProjects.set(<InterestMe/>, "interest_me.jpg")
 allProjects.set(<FireworksJS/>, "fireworks_js.gif")
 allProjects.set(<SearchAndSort/>, "search_and_sort.jpg")

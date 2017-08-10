@@ -28,7 +28,7 @@ const App = () => {
         onLeave={() => _hideId(section[1])}
         key={idx}
         >
-        <div id={section[1]} className={"hidden-true"}>
+        <div id={section[1]} className="hidden-true">
           {section[0]}
         </div>
       </Waypoint>

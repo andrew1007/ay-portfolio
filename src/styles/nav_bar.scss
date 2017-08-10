@@ -1,0 +1,25 @@
+@import './mixins.scss';
+
+.navbar {
+  &-container {
+    @include flex-row
+    justify-content: flex-end;
+    padding-right: 100px;
+    background-color: red;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    overflow: hidden;
+  }
+  &-link-container {
+    padding: 20px 100px 20px 100px;
+  }
+  &-link {
+    padding: 20px
+  }
+  &-link:hover {
+    cursor: pointer;
+    background-color: green;
+    transition: 300ms;
+  }
+}

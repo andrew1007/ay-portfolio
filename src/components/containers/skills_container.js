@@ -1,19 +1,22 @@
 import React from 'react';
 import Skill from '../skill/skill'
 
-const style = {"fontSize": "5em"}
 const allSkills = new Map ()
-allSkills.set("React.js + Redux", <i className="icon-reactjs" style={style}></i>)
-allSkills.set("JavaScript", <i className="icon-javascript" style={style}></i>)
-allSkills.set("Ruby on Rails",  <i className="icon-ruby-on-rails" style={style}></i>)
-allSkills.set("Sass",  <i className="icon-sass" style={style}></i>)
-allSkills.set("Ruby", <i className="icon-ruby" style={style}></i>)
-allSkills.set("PostgreSQL",  <i className="icon-postgres" style={style}></i>)
+//values are fontawesome class names
+//keys are skill name
+allSkills.set("React.js + Redux", "icon-reactjs")
+allSkills.set("JavaScript", "icon-javascript")
+allSkills.set("Ruby on Rails",  "icon-ruby-on-rails")
+allSkills.set("Sass",  "icon-sass")
+allSkills.set("Ruby", "icon-ruby")
+allSkills.set("PostgreSQL",  "icon-postgres")
 
 const SkillsContainer = () => {
-
+  const style = {"fontSize": "5em"}
+  let fontAwesomeIcon
   const skillsArray = Array.from(allSkills).map(([name, skill]) => {
-    return <Skill key={name} icon={skill} name={name}/>
+    fontAwesomeIcon = <i className={skill} style={style}></i>
+    return <Skill key={name} icon={fontAwesomeIcon} name={name}/>
   })
 
   return (

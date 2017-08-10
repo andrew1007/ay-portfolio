@@ -2,7 +2,7 @@
 .intro-container {
   display: flex;
   flex-direction: row;
-  height: 70vh; }
+  height: 75vh; }
 
 .intro-subcontainer {
   width: 50vw;
@@ -28,6 +28,7 @@
   text-align: left; }
 
 .intro-profile-container {
+  padding-top: 50px;
   display: flex;
   align-items: flex-start; }
 
@@ -121,6 +122,28 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 100px;
+  background-color: red;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  overflow: hidden; }
+
+.navbar-link-container {
+  padding: 20px 100px 20px 100px; }
+
+.navbar-link {
+  padding: 20px; }
+
+.navbar-link:hover {
+  cursor: pointer;
+  background-color: green;
+  transition: 300ms; }
+
 .App {
   text-align: center; }
 
@@ -137,12 +160,17 @@
   padding: 20px;
   color: white; }
 
+.intro-container {
+  padding-top: 40px; }
+
 .hidden-true {
+  padding-top: 40px;
   opacity: 0;
   transition: opacity 500ms ease-out;
   animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1); }
 
 .hidden-false {
+  padding-top: 40px;
   opacity: 1;
   transition: opacity 750ms ease-in;
   animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 1); }

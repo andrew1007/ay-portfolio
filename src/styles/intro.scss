@@ -3,7 +3,7 @@
 .intro {
   &-container {
     @include flex-row;
-    height: 70vh;
+    height: 75vh;
   }
   &-subcontainer {
     width: 50vw;
@@ -32,6 +32,7 @@
 
 .intro-profile {
   &-container {
+    padding-top: 50px;
     display: flex;
     align-items: flex-start;
   }
