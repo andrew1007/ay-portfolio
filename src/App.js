@@ -21,6 +21,20 @@ const App = () => {
     $(`#${id}`).removeClass("hidden-false").addClass("hidden-true")
   }
 
+  const _showNavBackground = () => {
+    $(`#navbar-container`).removeClass("navbar-hidden-true")
+    .addClass("navbar-hidden-false")
+    $(".navbar-trasparent-link-true").removeClass("navbar-trasparent-link-true")
+    .addClass("navbar-trasparent-link-false")
+  }
+
+  const _hideNavBackground = () => {
+    $(`#navbar-container`).removeClass("navbar-hidden-false")
+    .addClass("navbar-hidden-true")
+    $(".navbar-trasparent-link-false").removeClass("navbar-trasparent-link-false")
+    .addClass("navbar-trasparent-link-true")
+  }
+
   const renderContainers = Array.from(containers).map((section, idx) => {
     return (
       <Waypoint
@@ -37,7 +51,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar/>
+      <div id="nav-container">
+        <NavBar/>
+      </div>
+      <Waypoint
+        onEnter={() => _hideNavBackground()}
+        onLeave={() => _showNavBackground()}
+      />
       {renderContainers}
     </div>
   );

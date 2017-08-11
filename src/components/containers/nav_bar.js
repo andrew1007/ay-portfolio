@@ -14,7 +14,7 @@ const NavBar = () => {
   const navLinks = Array.from(links).map(([title, tagId]) => {
     return (
       <Link to={tagId} smooth={true} duration={500} offset={-50}>
-        <span className="navbar-link">
+        <span className="navbar-transparent-link-true">
           <NavBarLink title={title} tagId={tagId}/>
         </span>
       </Link>
@@ -23,13 +23,13 @@ const NavBar = () => {
 
   const resume =
     <a target="_blank" href={require('../../images/resume.pdf')}>
-      <span className="navbar-link">
+      <span className="navbar-transparent-link-true">
         Resume
       </span>
     </a>
 
   return (
-    <nav className="navbar-container">
+    <nav id="navbar-container" className="navbar-hidden-true">
       <span className="navbar-link-container">
         {resume}
         {navLinks}
