@@ -3,7 +3,8 @@
 .project {
   &-container {
     @include flex-column;
-    height: 90vh;
+    justify-content: flex-start;
+    // height: 90vh;
     width: 40vw;
     padding: 20px;
   }

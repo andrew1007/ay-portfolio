@@ -1,6 +1,12 @@
 @import './mixins.scss';
 
-.project_description-interest-me {
+.project-description {
+  &-text {
+    font-size: 25px;
+  }
+}
+
+.project-description-interest-me {
   &-ul-container {
     @include flex-column;
     @include flex-center;
@@ -10,5 +16,6 @@
     align-items: flex-start;
     justify-content: center;
     margin-right: 20px;
+    font-size: 25px;
   }
 }

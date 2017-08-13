@@ -15,7 +15,6 @@ containers.set(<ProjectsContainer/>, "projects-container")
 const App = () => {
   const _showId = (id) => {
     $(`#${id}`).removeClass("hidden-true").addClass("hidden-false")
-    debugger
     $(".navbar-hidden-true").removeClass("navbar-hidden-true")
     .addClass("navbar-hidden-false")
   }
