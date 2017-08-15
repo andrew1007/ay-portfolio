@@ -2,12 +2,11 @@
 
 .navbar {
   &-link-container {
-    padding: 20px 100px 20px 100px;
+    padding: 20px 30px 20px 100px;
   }
   &-transparent-link {
     &-false {
       padding: 20px;
-      background-color: red;
     }
     &-true {
       margin: 20px;
@@ -42,7 +41,6 @@
   }
   &-hidden-false {
     @extend #navbar-container;
-    background-color: red;
   }
 }
 
@@ -54,7 +52,7 @@
      transition: 500ms ease-out;
    }
    &-false {
-     background-color: red;
+     background-color: #69c5ff;
      transition: 500ms ease-in;
    }
 }

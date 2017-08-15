@@ -6,8 +6,9 @@
     @include flex-column;
   }
   &-individual-projects {
-    @include flex-center;
     @include flex-row;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 }

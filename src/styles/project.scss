@@ -3,10 +3,18 @@
 .project {
   &-container {
     @include flex-column;
-    justify-content: flex-start;
-    // height: 90vh;
     width: 40vw;
-    padding: 20px;
+    padding: 40px;
+    min-width: 600px;
+    max-width: 600px;
+  }
+  &-description-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+  &-subcontainer:last-child {
+    margin-top: 0px;
   }
   &-subcontainer {
     @include flex-column;
@@ -14,19 +22,18 @@
     margin: 20px;
     &-image {
       @extend .project-subcontainer;
-      height: 50%;
-      max-height: 315px;
+      max-height: 340px;
       overflow: hidden;
       min-height: 340px;
+      min-width: 540px;
+      max-width: 540px;
     }
     &-text {
       @extend .project-subcontainer;
     }
   }
-  &-subcontainer:last-child {
-    margin-top: 0px;
-  }
 }
+
 
 .project-image {
   &-picture {

@@ -40,28 +40,36 @@ const App = () => {
   }
 
   const renderContainers = Array.from(containers).map((section, idx) => {
-    return (
-      <Waypoint
-        onEnter={() => _showId(section[1])}
-        onLeave={() => _hideId(section[1])}
-        key={idx}
-        >
-        <div id={section[1]} className="hidden-true">
+    if (section[1] === "intro-container") {
+      return (
+        <div id={section[1]} className="hidden-false">
           {section[0]}
         </div>
-      </Waypoint>
-    )
+      )
+    } else {
+      return (
+        <Waypoint
+          onEnter={() => _showId(section[1])}
+          onLeave={() => _hideId(section[1])}
+          key={idx}
+          >
+            <div id={section[1]} className="hidden-true">
+              {section[0]}
+            </div>
+          </Waypoint>
+        )
+    }
   })
 
   return (
     <div className="App">
+      <Waypoint
+        onLeave={() => _showNavBackground()}
+        onEnter={() => _hideNavBackground()}
+      />
       <div id="nav-container">
         <NavBar/>
       </div>
-      <Waypoint
-        onEnter={() => _hideNavBackground()}
-        onLeave={() => _showNavBackground()}
-      />
       {renderContainers}
     </div>
   );

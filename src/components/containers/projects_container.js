@@ -35,7 +35,7 @@ const ProjectsContainer = () => {
           Things I've made
         </h1>
         <div className="containers-individual-projects">
-          {projectArray}
+          { projectArray }
         </div>
     </div>
   )

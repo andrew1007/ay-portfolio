@@ -1,9 +1,18 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 40vw;
-  padding: 20px; }
+  padding: 40px;
+  min-width: 600px;
+  max-width: 600px; }
+
+.project-description-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left; }
+
+.project-subcontainer:last-child, .project-subcontainer-image:last-child, .project-subcontainer-text:last-child {
+  margin-top: 0px; }
 
 .project-subcontainer, .project-subcontainer-image, .project-subcontainer-text {
   display: flex;
@@ -11,13 +20,11 @@
   align-items: flex-start;
   margin: 20px; }
   .project-subcontainer-image {
-    height: 50%;
-    max-height: 315px;
+    max-height: 340px;
     overflow: hidden;
-    min-height: 340px; }
-
-.project-subcontainer:last-child, .project-subcontainer-image:last-child, .project-subcontainer-text:last-child {
-  margin-top: 0px; }
+    min-height: 340px;
+    min-width: 540px;
+    max-width: 540px; }
 
 .project-image-picture {
   min-height: 340px; }

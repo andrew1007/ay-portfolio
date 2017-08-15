@@ -2,8 +2,10 @@ import React from 'react'
 
 const SearchAndSort = () => (
   <div>
-    Search and Sort
-    <p>
+    <h2>
+      Search and Sort
+    </h2>
+    <p className="project-description-text">
       You know what can be hard to understand? Recursion. You know what makes it easier?
       Seeing it in action.
     </p>

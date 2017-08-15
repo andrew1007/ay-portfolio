@@ -3,8 +3,9 @@
 .intro {
   &-container {
     @include flex-row;
-    height: 75vh;
+    min-height: 75vh;
     min-height: 620px;
+    padding: 0px 130px 0px 130px;
   }
   &-subcontainer {
     width: 50vw;

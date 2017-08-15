@@ -2,8 +2,10 @@ import React from 'react'
 
 const Portfolio = () => (
   <div>
-    This Portfolio Website
-    <p>
+    <h2>
+      This Portfolio Website
+    </h2>
+    <p className="project-description-text">
       Yep, this is a React.js frontend-only web app. A 100% stateless
       one as well. There are a lot of templates out there, but I thought
       this would be a great

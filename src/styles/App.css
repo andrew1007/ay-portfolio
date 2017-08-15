@@ -2,8 +2,9 @@
 .intro-container {
   display: flex;
   flex-direction: row;
-  height: 75vh;
-  min-height: 620px; }
+  min-height: 75vh;
+  min-height: 620px;
+  padding: 0px 130px 0px 130px; }
 
 .intro-subcontainer {
   width: 50vw;
@@ -55,9 +56,18 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 40vw;
-  padding: 20px; }
+  padding: 40px;
+  min-width: 600px;
+  max-width: 600px; }
+
+.project-description-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left; }
+
+.project-subcontainer:last-child, .project-subcontainer-image:last-child, .project-subcontainer-text:last-child {
+  margin-top: 0px; }
 
 .project-subcontainer, .project-subcontainer-image, .project-subcontainer-text {
   display: flex;
@@ -65,13 +75,11 @@
   align-items: flex-start;
   margin: 20px; }
   .project-subcontainer-image {
-    height: 50%;
-    max-height: 315px;
+    max-height: 340px;
     overflow: hidden;
-    min-height: 340px; }
-
-.project-subcontainer:last-child, .project-subcontainer-image:last-child, .project-subcontainer-text:last-child {
-  margin-top: 0px; }
+    min-height: 340px;
+    min-width: 540px;
+    max-width: 540px; }
 
 .project-image-picture {
   min-height: 340px; }
@@ -93,7 +101,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 20px;
+  margin: 0px 20px 0px 0px;
   font-size: 25px; }
 
 .skill, .skill-container, .skill-icon-container, .skill-name-container {
@@ -135,18 +143,17 @@
   flex-direction: column; }
 
 .containers-individual-projects {
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start; }
 
 .navbar-link-container {
-  padding: 20px 100px 20px 100px; }
+  padding: 20px 30px 20px 100px; }
 
 .navbar-transparent-link-false {
-  padding: 20px;
-  background-color: red; }
+  padding: 20px; }
 
 .navbar-transparent-link-true {
   margin: 20px;
@@ -174,8 +181,6 @@
   overflow: hidden; }
   #navbar-container-hidden-true {
     background-color: transparent; }
-  #navbar-container-hidden-false {
-    background-color: red; }
 
 .navbar-hidden {
   padding-top: 40px;
@@ -184,11 +189,11 @@
     background-color: transparent;
     transition: 500ms ease-out; }
   .navbar-hidden-false {
-    background-color: red;
+    background-color: #69c5ff;
     transition: 500ms ease-in; }
 
 .about-me-container {
-  padding: 30px 100px 0px 100px; }
+  padding: 30px 200px 0px 200px; }
 
 .about-me-text {
   font-size: 25px;

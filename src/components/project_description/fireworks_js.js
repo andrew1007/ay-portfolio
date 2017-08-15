@@ -2,8 +2,10 @@ import React from 'react'
 
 const FireworksJS = () => (
   <div>
-    Fireworks.js
-    <p>
+    <h2>
+      Fireworks.js
+    </h2>
+    <p className="project-description-text">
       Fireworks.js is a fireworks simulator, written in JavaScript
       (ES6 syntax) with modularity and inheritance fully in mind.
       Is it my most technically impressive project? No, but I think

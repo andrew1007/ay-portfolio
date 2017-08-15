@@ -6,11 +6,9 @@ const InterestMe = () => (
       Interest Me
     </h2>
       <p className="project-description-text">
-        InterestMe is a social media web app for users to share pictures
+        InterestMe is a social media web app for users to share images
         with each other.
-        It is my full stack web app that I created in two weeks.
-        I polish and maintain it while I work on other projects. All of
-        my core web development principles, layered into one web app.
+        I polish and maintain it while I work on other projects.
         Its stack is:
       </p>
       <div className="project-description-interest-me-ul-container">
