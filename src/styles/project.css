@@ -1,10 +1,12 @@
 .project-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 40vw;
-  padding: 40px;
-  min-width: 600px;
-  max-width: 600px; }
+  padding: 20px;
+  min-width: 580px;
+  max-width: 580px; }
 
 .project-description-text {
   padding-left: 10px;
@@ -20,11 +22,21 @@
   align-items: flex-start;
   margin: 20px; }
   .project-subcontainer-image {
-    max-height: 340px;
+    max-height: 300px;
     overflow: hidden;
-    min-height: 340px;
-    min-width: 540px;
-    max-width: 540px; }
+    min-height: 300px;
+    min-width: 500px;
+    max-width: 500px; }
+  .project-subcontainer-link {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    outline: none;
+    border-radius: 100px;
+    font-size: 20px; }
+  .project-subcontainer-link:hover {
+    color: black;
+    cursor: pointer; }
 
 .project-image-picture {
   min-height: 340px; }

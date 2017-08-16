@@ -12,20 +12,27 @@ const allProjects = new Map ()
 //directory of image file is abstracted out. see src/project/project_image.js
 //keys are texts components
 //values are images
-allProjects.set(<InterestMe/>, "interest_me.jpg")
-allProjects.set(<FireworksJS/>, "fireworks_js.gif")
-allProjects.set(<SearchAndSort/>, "search_and_sort.jpg")
-allProjects.set(<Portfolio/>, null)
-allProjects.set(<HayaSushi/>, "haya_sushi.jpg")
+allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuapp.com/#/session"])
+allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
+allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/SearchAndSort/#/bsearch"])
+allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
+allProjects.set(<HayaSushi/>, ["haya_sushi.jpg", "https://haya-sushi.herokuapp.com/#/home"])
 
 const ProjectsContainer = () => {
   let projectArray = Array.from(allProjects).map(([component, image]) => {
-    return <Project key={image} image={image} description={component}/>
+    return <Project
+      key={image[0]}
+      image={image[0]}
+      description={component}
+      url={image[1]}
+    />
   })
   if (projectArray.length % 2 !== 0) {
     const filler = <Project key={'fill'}
       image={null}
-      description={<FillerDescription/>}/>
+      description={<FillerDescription/>}
+      url={null}
+    />
     projectArray = [...projectArray, filler]
   }
 

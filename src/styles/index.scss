@@ -6,22 +6,27 @@ body {
   font-style: normal;
   color: rgba(0, 0, 0, 0.8);
   font-size: 20px;
+  background-color: #3a63a5;
+  color: white;
 }
 
 a, a:visited {
   text-decoration: none;
-  color: gray;
+  color: white;
 }
 
 a:hover {
   color: black;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 button {
   background-color: transparent;
-  border: 0px;
+  border: 1px solid white;
+  padding: 15px;
   outline: none;
+  border-radius: 100px;
+  font-size: 20px;
 }
 
 button:hover {

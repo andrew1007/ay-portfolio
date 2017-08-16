@@ -6,10 +6,24 @@ const Project = (props) => {
   return (
     <div className="project-container">
       <div className="project-subcontainer-image">
-        { props.image ? <ProjectImage image={props.image}/> : null }
+        <a target="_blank" href={props.url}>
+          { props.image ? <ProjectImage image={props.image}/> : null }
+        </a>
       </div>
       <div className="project-subcontainer-text">
         { props.description ? <ProjectText description={props.description}/> : null }
+      </div>
+      <div>
+        {
+          props.image ?
+          <button onClick={() => window.open(props.url)}>
+            <a target="_blank" href={props.url}>
+              Visit Website
+            </a>
+          </button>
+            :
+            null
+        }
       </div>
     </div>
   )
