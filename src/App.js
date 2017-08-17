@@ -68,7 +68,9 @@ const App = () => {
       <Waypoint
         onLeave={() => _showNavBackground()}
         onEnter={() => _hideNavBackground()}
-      />
+      >
+        <div className="navbar-filler"/>
+      </Waypoint>
       <div id="nav-container">
         <NavBar/>
       </div>

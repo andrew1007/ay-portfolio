@@ -100,7 +100,7 @@
   min-width: 310px; }
 
 .project-description-text {
-  font-size: 25px; }
+  font-size: 23px; }
 
 .project-description-interest-me-ul-container {
   display: flex;
@@ -243,6 +243,11 @@
 .waypoint-filler {
   position: absolute;
   height: 80vh; }
+
+.navbar-filler {
+  position: absolute;
+  height: 20px;
+  top: 0px; }
 
 .App-intro {
   font-size: large; }
