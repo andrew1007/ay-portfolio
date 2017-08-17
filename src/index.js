@@ -7,7 +7,11 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Favicon from 'react-favicon'
 
 document.addEventListener('DOMContentLoaded', () => {
-  <Favicon url={[null]}/>
-  ReactDOM.render(<App/>, document.getElementById('root'));
+  ReactDOM.render(
+    <div>
+      <App/>
+      <Favicon url={[null]}/>
+    </div>
+    , document.getElementById('root'));
   registerServiceWorker();
 })
