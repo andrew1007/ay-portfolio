@@ -6,6 +6,7 @@ import ProjectsContainer from './components/containers/projects_container'
 import NavBar from './components/containers/nav_bar'
 import Waypoint from 'react-waypoint'
 import $ from 'jquery'
+import {ping} from 'periodic-ping';
 
 const containers = new Map()
 containers.set(<IntroContainer/>, "intro-container")
@@ -63,6 +64,7 @@ const App = () => {
 
   return (
     <div className="App">
+      {ping({appName: "ay-portfolio"})}
       <Waypoint
         onLeave={() => _showNavBackground()}
         onEnter={() => _hideNavBackground()}
