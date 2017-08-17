@@ -62,9 +62,9 @@ const App = () => {
     }
   })
 
+  ping({appName: "ay-portfolio"})
   return (
     <div className="App">
-      {ping({appName: "ay-portfolio"})}
       <Waypoint
         onLeave={() => _showNavBackground()}
         onEnter={() => _hideNavBackground()}
