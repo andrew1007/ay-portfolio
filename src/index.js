@@ -5,7 +5,6 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Favicon from 'react-favicon'
-require('./newrelic')
 
 document.addEventListener('DOMContentLoaded', () => {
   <Favicon url={[null]}/>
