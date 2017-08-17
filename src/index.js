@@ -5,6 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import http from "http";
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import './newrelic.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   setInterval(function() {

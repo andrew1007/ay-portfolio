@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
-import Scroll from 'react-scroll'
+import React from 'react'
 
 const NavBarLink = props => {
-
-  const Link = Scroll.Link
-
   return(
-    <Link to={props.tagId} smooth={true} duration={500} offset={-50}>
+    <span>
       {props.title}
-    </Link>
+    </span>
   )
 }
 

@@ -13,8 +13,8 @@ const NavBar = () => {
   const Link = Scroll.Link
   const navLinks = Array.from(links).map(([title, tagId]) => {
     return (
-      <Link to={tagId} smooth={true} duration={500} offset={-50}>
-        <span className="navbar-transparent-link-true">
+      <Link to={tagId} key={title} smooth={true} duration={500} offset={-50}>
+        <span key={title} className="navbar-transparent-link-true">
           <NavBarLink title={title} tagId={tagId}/>
         </span>
       </Link>

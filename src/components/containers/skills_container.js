@@ -21,7 +21,7 @@ const SkillsContainer = () => {
 
   return (
     <div className="skills-container">
-      <h1>Here are some things I know</h1>
+      <h1>Here is what I know</h1>
       <div className="skills-entries-container">
         {skillsArray}
       </div>

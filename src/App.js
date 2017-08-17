@@ -42,7 +42,7 @@ const App = () => {
   const renderContainers = Array.from(containers).map((section, idx) => {
     if (section[1] === "intro-container") {
       return (
-        <div id={section[1]} className="hidden-false">
+        <div key={idx} id={section[1]} className="hidden-false">
           {section[0]}
         </div>
       )
