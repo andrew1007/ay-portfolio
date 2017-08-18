@@ -40,13 +40,13 @@ const App = () => {
   }
 
   const renderContainers = Array.from(containers).map((section, idx) => {
-    if (section[1] === "intro-container") {
-      return (
-        <div key={idx} id={section[1]} className="hidden-false">
-          {section[0]}
-        </div>
-      )
-    } else {
+    // if (section[1] === "intro-container") {
+    //   return (
+    //     <div key={idx} id={section[1]} className="hidden-false">
+    //       {section[0]}
+    //     </div>
+    //   )
+    // } else {
       return (
         <Waypoint
           scrollableAncestor={window}
@@ -59,7 +59,7 @@ const App = () => {
             </div>
           </Waypoint>
         )
-    }
+    // }
   })
 
   return (
