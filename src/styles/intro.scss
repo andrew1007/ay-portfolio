@@ -83,7 +83,10 @@
     }
     &-profile-container {
       @include flex-center;
-      padding-left:30px;
+      width: 100%;
+    }
+    &-profile-picture {
+      width: 70%;
     }
   }
 }

@@ -72,7 +72,9 @@
   .intro-profile-container {
     justify-content: center;
     align-items: center;
-    padding-left: 30px; } }
+    width: 100%; }
+  .intro-profile-picture {
+    width: 70%; } }
 
 .project-container {
   display: flex;
