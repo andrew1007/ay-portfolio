@@ -51,3 +51,24 @@
 
 .resume {
   opacity: .75; }
+
+@media screen and (max-width: 1100px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+  .intro-subcontainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px; }
+  .intro-text-container {
+    padding: 0px;
+    padding-top: 30px;
+    padding-right: 30px; }
+  .intro-profile-container {
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px; } }

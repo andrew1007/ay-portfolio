@@ -15,7 +15,7 @@ const Project = (props) => {
       </div>
       <div>
         {
-          props.image ?
+          props.image && props.show ?
           <button onClick={() => window.open(props.url)}>
             <a target="_blank" href={props.url}>
               Visit Website

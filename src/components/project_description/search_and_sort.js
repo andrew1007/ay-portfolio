@@ -10,7 +10,7 @@ const SearchAndSort = () =>  {
       </h2>
       <p className="project-description-text">
         A project written in pure Javascript (ES6), I worked with two great
-        programmers{" "}
+        programmers
         <span>
           <a target="_blank" href={joyce} className="project-description-link">
             {" "}Joyce Chau{" "}

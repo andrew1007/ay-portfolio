@@ -25,6 +25,7 @@ const ProjectsContainer = () => {
       image={image[0]}
       description={component}
       url={image[1]}
+      show={image[0] === "portfolio.jpg" ? false : true}
     />
   })
   if (projectArray.length % 2 !== 0) {

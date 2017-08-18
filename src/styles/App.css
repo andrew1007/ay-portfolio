@@ -53,6 +53,27 @@
 .resume {
   opacity: .75; }
 
+@media screen and (max-width: 1100px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+  .intro-subcontainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px; }
+  .intro-text-container {
+    padding: 0px;
+    padding-top: 30px;
+    padding-right: 30px; }
+  .intro-profile-container {
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px; } }
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -122,6 +143,10 @@
   justify-content: center;
   margin: 0px 20px 0px 0px;
   font-size: 25px; }
+
+@media screen and (max-width: 1100px) {
+  .project-filler-description {
+    height: 0px; } }
 
 .skill, .skill-container, .skill-icon-container, .skill-name-container {
   display: flex;
@@ -217,6 +242,11 @@
 .about-me-text {
   font-size: 25px;
   text-align: left; }
+
+@media screen and (max-width: 1100px) {
+  .about-me-container {
+    padding-right: 100px;
+    padding-left: 100px; } }
 
 .App {
   text-align: center; }

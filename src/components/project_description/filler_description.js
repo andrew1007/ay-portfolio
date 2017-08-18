@@ -1,7 +1,7 @@
 import React from 'react'
 
 const FillerDescription = () => (
-  <div>
+  <div className="project-filler-description">
   </div>
 )
 
