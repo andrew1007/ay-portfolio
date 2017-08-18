@@ -40,16 +40,15 @@ const App = () => {
   }
 
   const renderContainers = Array.from(containers).map((section, idx) => {
-    // if (section[1] === "intro-container") {
-    //   return (
-    //     <div key={idx} id={section[1]} className="hidden-false">
-    //       {section[0]}
-    //     </div>
-    //   )
-    // } else {
+    if (section[1] === "intro-container") {
+      return (
+        <div key={idx} id={section[1]} className="hidden-false">
+          {section[0]}
+        </div>
+      )
+    } else {
       return (
         <Waypoint
-          scrollableAncestor={window}
           onEnter={() => _showId(section[1])}
           onLeave={() => _hideId(section[1])}
           key={idx}
@@ -59,7 +58,7 @@ const App = () => {
             </div>
           </Waypoint>
         )
-    // }
+    }
   })
 
   return (
@@ -67,9 +66,9 @@ const App = () => {
       <Waypoint
         onLeave={() => _showNavBackground()}
         onEnter={() => _hideNavBackground()}
-        topOffset={"30px"}
+        topOffset={"25px"}
       >
-        <div className="navbar-filler"/>
+        <div className="navbar-filler"></div>
       </Waypoint>
       <div id="nav-container">
         <NavBar/>
