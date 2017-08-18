@@ -4,6 +4,13 @@
   &-text {
     font-size: 23px;
   }
+  &-link {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  &-link:hover {
+    border-bottom: 2px solid black !important
+  }
 }
 
 .project-description-interest-me {

@@ -102,6 +102,13 @@
 .project-description-text {
   font-size: 23px; }
 
+.project-description-link {
+  color: white;
+  border-bottom: 2px solid white; }
+
+.project-description-link:hover {
+  border-bottom: 2px solid black !important; }
+
 .project-description-interest-me-ul-container {
   display: flex;
   flex-direction: column;
@@ -246,7 +253,7 @@
 
 .navbar-filler {
   position: absolute;
-  height: 20px;
+  height: 30px;
   top: 0px; }
 
 .App-intro {
