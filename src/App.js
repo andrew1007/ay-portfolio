@@ -49,6 +49,7 @@ const App = () => {
     } else {
       return (
         <Waypoint
+          scrollableAncestor={window}
           onEnter={() => _showId(section[1])}
           onLeave={() => _hideId(section[1])}
           key={idx}
@@ -66,6 +67,7 @@ const App = () => {
       <Waypoint
         onLeave={() => _showNavBackground()}
         onEnter={() => _hideNavBackground()}
+        topOffset={"30px"}
       >
         <div className="navbar-filler"/>
       </Waypoint>
