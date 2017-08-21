@@ -15,7 +15,6 @@ containers.set(<ProjectsContainer/>, "projects-container")
 const App = () => {
   const _showId = (id) => {
     $(`#${id}`).removeClass("hidden-true").addClass("hidden-false")
-    debugger
     if (window.pageYOffset > 0) {
       $(".navbar-hidden-true").removeClass("navbar-hidden-true")
       .addClass("navbar-hidden-false")
@@ -43,25 +42,17 @@ const App = () => {
   }
 
   const renderContainers = Array.from(containers).map((section, idx) => {
-    // if (section[1] === "intro-container") {
-    //   return (
-    //     <div key={idx} id={section[1]} className="hidden-false">
-    //       {section[0]}
-    //     </div>
-    //   )
-    // } else {
-      return (
-        <Waypoint
-          onEnter={() => _showId(section[1])}
-          onLeave={() => _hideId(section[1])}
-          key={idx}
-          >
-            <div id={section[1]} className="hidden-true">
-              {section[0]}
-            </div>
-          </Waypoint>
-        )
-    // }
+    return (
+      <Waypoint
+        onEnter={() => _showId(section[1])}
+        onLeave={() => _hideId(section[1])}
+        key={idx}
+        >
+          <div id={section[1]} className="hidden-true">
+            {section[0]}
+          </div>
+        </Waypoint>
+      )
   })
 
   return (
