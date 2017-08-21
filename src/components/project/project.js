@@ -3,6 +3,12 @@ import ProjectImage from './project_image'
 import ProjectText from './project_text'
 
 const Project = (props) => {
+  const websiteUrl = <button onClick={() => window.open(props.url)}>
+              <a target="_blank" href={props.url}>
+                Visit Website
+              </a>
+            </button>
+
   return (
     <div className="project-container">
       <div className="project-subcontainer-image">
@@ -14,16 +20,7 @@ const Project = (props) => {
         { props.description ? <ProjectText description={props.description}/> : null }
       </div>
       <div>
-        {
-          props.image && props.show ?
-          <button onClick={() => window.open(props.url)}>
-            <a target="_blank" href={props.url}>
-              Visit Website
-            </a>
-          </button>
-            :
-            null
-        }
+        { props.image && props.show ? websiteUrl : null }
       </div>
     </div>
   )

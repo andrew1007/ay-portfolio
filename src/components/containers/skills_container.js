@@ -13,9 +13,8 @@ allSkills.set("PostgreSQL",  "icon-postgres")
 
 const SkillsContainer = () => {
   const style = {"fontSize": "5em"}
-  let fontAwesomeIcon
   const skillsArray = Array.from(allSkills).map(([name, skill]) => {
-    fontAwesomeIcon = <i className={skill} style={style}></i>
+    let fontAwesomeIcon = <i className={skill} style={style}></i>
     return <Skill key={name} icon={fontAwesomeIcon} name={name}/>
   })
 
