@@ -4,7 +4,7 @@ import Scroll from 'react-scroll'
 
 const links = new Map ()
 //keys are nav bar names
-//keys are html id names of containers to jump to
+//keys are html id names of containers to jump to using react-scroll
 links.set("About Me", "intro-container")
 links.set("Skills", "skills-container")
 links.set("Projects", "projects-container")
