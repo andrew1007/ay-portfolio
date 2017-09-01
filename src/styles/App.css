@@ -257,8 +257,8 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px; }
 
-.fa-github, .fa-envelope-o, .fa-linkedin {
-  opacity: 0.6; }
+.fa {
+  opacity: 0.75; }
 
 .App-header {
   background-color: #222;
