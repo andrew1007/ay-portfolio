@@ -28,9 +28,17 @@ const NavBar = () => {
       </span>
     </a>
 
+  const blog =
+    <a target="_blank" href={'http://www.andrewyueh.blogspot.com/'}>
+      <span className="navbar-transparent-link-true">
+        Blog
+      </span>
+    </a>
+
   return (
     <nav id="navbar-container" className="navbar-hidden-true">
       <span className="navbar-link-container">
+        {blog}
         {resume}
         {navLinks}
       </span>
