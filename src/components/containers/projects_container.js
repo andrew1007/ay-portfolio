@@ -18,22 +18,16 @@ allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/S
 allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
 allProjects.set(<HayaSushi/>, ["haya_sushi.jpg", "https://haya-sushi.herokuapp.com/#/home"])
 
-const ProjectsContainer = () => {
-  let projectArray = Array.from(allProjects).map(([component, image]) => {
-    return <Project
-      key={image[0]}
-      image={image[0]}
-      description={component}
-      url={image[1]}
-      show={image[0] === "portfolio.jpg" ? false : true}
-    />
+const ProjectsContainer = _ => {
+  let projectArray = Array.from(allProjects).map(([description, imageUrl]) => {
+    let [image, url] = imageUrl
+    let projectProps = {image, description, url}
+    projectProps['show'] = image === "portfolio.jpg" ? false : true
+    return <Project key={image} {...projectProps} />
   })
   if (projectArray.length % 2 !== 0) {
-    const filler = <Project key={'fill'}
-      image={null}
-      description={<FillerDescription/>}
-      url={null}
-    />
+    let fillProps = {key: 'fill', image: null, url: null, description: <FillerDescription/>}
+    const filler = <Project {...fillProps} />
     projectArray = [...projectArray, filler]
   }
 

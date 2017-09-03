@@ -9,7 +9,7 @@ links.set("About Me", "intro-container")
 links.set("Skills", "skills-container")
 links.set("Projects", "projects-container")
 
-const NavBar = () => {
+const NavBar = _ => {
   const Link = Scroll.Link
   const navLinks = Array.from(links).map(([title, tagId]) => {
     return (

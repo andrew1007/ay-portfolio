@@ -11,11 +11,10 @@ allSkills.set("Sass",  "icon-sass")
 allSkills.set("Ruby", "icon-ruby")
 allSkills.set("PostgreSQL",  "icon-postgres")
 
-const SkillsContainer = () => {
-  const style = {"fontSize": "5em"}
-  const skillsArray = Array.from(allSkills).map(([name, skill]) => {
-    let fontAwesomeIcon = <i className={skill} style={style}></i>
-    return <Skill key={name} icon={fontAwesomeIcon} name={name}/>
+const SkillsContainer = _ => {
+  const skillsArray = Array.from(allSkills).map(([name, icon]) => {
+    let skillProps = {key: name, icon, name}
+    return <Skill {...skillProps}/>
   })
 
   return (

@@ -5,7 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', _ => {
   ReactDOM.render(
       <App/>
     , document.getElementById('root'));

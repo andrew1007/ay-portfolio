@@ -12,8 +12,8 @@ containers.set(<IntroContainer/>, "intro-container")
 containers.set(<SkillsContainer/>, "skills-container")
 containers.set(<ProjectsContainer/>, "projects-container")
 
-const App = () => {
-  const _showId = (id) => {
+const App = _ => {
+  const _showId = id => {
     $(`#${id}`).removeClass("hidden-true").addClass("hidden-false")
     if (window.pageYOffset > 0) {
       $(".navbar-hidden-true").removeClass("navbar-hidden-true")
@@ -21,7 +21,7 @@ const App = () => {
     }
   }
 
-  const _hideId = (id) => {
+  const _hideId = id => {
     $(`#${id}`).removeClass("hidden-false").addClass("hidden-true")
       $(".navbar-hidden-true").removeClass("navbar-hidden-true")
       .addClass("navbar-hidden-false")

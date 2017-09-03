@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Skill = (props) => {
+const Skill = props => {
+  const style = {"fontSize": "5em"}
   return (
     <div className="skill-container">
       <div className="skill-icon-container">
-        {props.icon}
+        <i className={props.icon} style={style}></i>
       </div>
       <div className="skill-name-container">
         <p className="skill-name">

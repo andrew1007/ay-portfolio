@@ -11,11 +11,9 @@ linksMap.set("Resume", [require('../../images/resume.pdf'), "fa fa-file-pdf-o fa
 const Links = (props) => {
 
   const links = Array.from(linksMap).map(([name, data]) => {
-    let url = data[0]
-    let icon = data[1]
-    return (
-      <Link key={url} link={url} icon={icon} name={name}/>
-    )
+    let [link, icon] = data
+    let linkProps = {link, icon, name}
+    return <Link key={link} {...linkProps}/>
   })
 
   return (
