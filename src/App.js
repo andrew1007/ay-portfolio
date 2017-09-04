@@ -41,15 +41,15 @@ const App = _ => {
     .addClass("navbar-trasparent-link-true")
   }
 
-  const renderContainers = Array.from(containers).map((section, idx) => {
+  const renderContainers = Array.from(containers).map(([component, id], idx) => {
     return (
       <Waypoint
-        onEnter={() => _showId(section[1])}
-        onLeave={() => _hideId(section[1])}
+        onEnter={() => _showId(id)}
+        onLeave={() => _hideId(id)}
         key={idx}
         >
-          <div id={section[1]} className="hidden-true">
-            {section[0]}
+          <div id={id} className="hidden-true">
+            {component}
           </div>
         </Waypoint>
       )
