@@ -21,8 +21,7 @@ allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
 allProjects.set(<HayaSushi/>, ["haya_sushi.jpg", "https://haya-sushi.herokuapp.com/#/home"])
 
 const ProjectsContainer = _ => {
-  let projectArray = Array.from(allProjects).map(([description, imageUrl]) => {
-    let [image, url] = imageUrl
+  let projectArray = Array.from(allProjects).map(([description, [image, url]]) => {
     let projectProps = {image, description, url}
     projectProps['show'] = image === "portfolio.jpg" ? false : true
     return <Project key={image} {...projectProps} />
