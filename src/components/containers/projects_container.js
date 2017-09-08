@@ -7,13 +7,13 @@ import SearchAndSort from '../project_description/search_and_sort'
 import HayaSushi from '../project_description/haya_sushi'
 import FillerDescription from '../project_description/filler_description'
 import Portfolio from '../project_description/portfolio'
-import ComponentOnloadImages from '../project_description/component_onload_images'
+import OnImagesLoaded from '../project_description/on_images_loaded'
 
 const allProjects = new Map ()
 //directory of image file is abstracted out. see src/project/project_image.js
 //keys are texts components
 //values are images
-allProjects.set(<ComponentOnloadImages/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-onload-component-images"])
+allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
 allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuapp.com/#/session"])
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
 allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/SearchAndSort/#/bsearch"])
