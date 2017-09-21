@@ -11,7 +11,7 @@ const OnImagesLoaded = () => (
       with the rest of the React.js community. It
       handles actions before and after images have
       fully finished loading. I used it to make the
-      entire component invivisible until all images
+      entire component invisible until all images
       were sized correctly. No more clunky loading!
     </p>
   </div>
