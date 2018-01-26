@@ -9,7 +9,7 @@ import FillerDescription from '../project_description/filler_description'
 import Portfolio from '../project_description/portfolio'
 import OnImagesLoaded from '../project_description/on_images_loaded'
 
-const allProjects = new Map ()
+const allProjects = new Map()
 //directory of image file is abstracted out. see src/project/project_image.js
 //keys are texts components
 //values are images
@@ -18,7 +18,7 @@ allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuap
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
 allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/SearchAndSort/#/bsearch"])
 allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
-allProjects.set(<HayaSushi/>, ["haya_sushi.jpg", "https://haya-sushi.herokuapp.com/#/home"])
+allProjects.set(<HayaSushi/>, ["haya_sushi.jpg", "https://haya-sushi.herokuapp.com/"])
 
 const ProjectsContainer = _ => {
   let projectArray = Array.from(allProjects).map(([description, [image, url]]) => {
