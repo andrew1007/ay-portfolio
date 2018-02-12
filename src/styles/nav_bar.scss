@@ -3,7 +3,6 @@
 .navbar {
   &-link-container {
     padding: 20px 30px 20px 100px;
-
   }
   &-transparent-link {
     &-false {
@@ -56,4 +55,13 @@
      background-color: #5e9bff;
      transition: 500ms ease-in;
    }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-link-container {
+    padding: 0px;
+  }
+  #navbar-container {
+    height: 0px;
+  }
 }

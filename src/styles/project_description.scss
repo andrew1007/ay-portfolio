@@ -28,8 +28,17 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
   .project-filler-description {
     height: 0px;
+  }
+  .project-description-text {
+    // padding-left: 10px;
+    // padding-right: 10px;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .project-subcontainer-text {
+    width: 100vw;
   }
 }

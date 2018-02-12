@@ -31,3 +31,11 @@
 .icon-reactjs {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .skill-container {
+    padding: 0.2em;
+    max-width: 150px;
+    min-width: 150px;
+  }
+}

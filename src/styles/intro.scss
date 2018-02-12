@@ -5,7 +5,7 @@
     @include flex-row;
     min-height: 75vh;
     min-height: 620px;
-    padding: 0px 130px 0px 130px;
+    padding: 0px 2vw 0px 2vw;
   }
   &-subcontainer {
     width: 50vw;
@@ -20,7 +20,7 @@
     @include flex-column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 5em 5em 2em 70px;
+    padding: 2em 2em 2em 3em;
   }
   &-title {
     font-size: 40px;
@@ -63,30 +63,46 @@
   opacity: .75; //the resume icon was strangely dark...
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
   .intro {
     &-container {
       flex-direction: column-reverse;
       @include flex-center;
+      padding: 0em 0em 0.5em 0.5em;
     }
     &-subcontainer {
       @include flex-center
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      padding: 20px;
+      padding: 0px;
+    }
+    &-text-title {
+      margin: 0.3em 0em 0.2em 0em;
+      width: 100vw;
+      border-bottom: 2px solid white;
+      font-size: 2em;
+      text-align: center;
+    }
+    &-text-body {
+      font-size: 1.3em;
+      text-align: center;
+      width: 100%;
     }
     &-text-container {
-      padding: 0px;
-      padding-top: 30px;
-      padding-right: 30px;
+      padding: 0.5em 0em 0em 0em;
+      width: 100%;
     }
     &-profile-container {
       @include flex-center;
       width: 100%;
+      padding-top: 1em;
     }
     &-profile-picture {
       width: 70%;
     }
+  }
+  #intro-container {
+    padding-top: 0.2em;
   }
 }

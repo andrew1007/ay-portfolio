@@ -8,10 +8,13 @@ const Project = (props) => {
                 Visit Website
               </a>
             </button>
-
+  const noImageStyle = {
+    maxHeight: '10px',
+    minHeight: '10px'
+  }
   return (
     <div className="project-container">
-      <div className="project-subcontainer-image">
+      <div style={props.image ? {} : noImageStyle}  className="project-subcontainer-image">
         <a target="_blank" href={props.url}>
           { props.image ? <ProjectImage image={props.image}/> : null }
         </a>

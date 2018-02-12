@@ -3,7 +3,7 @@ import React from 'react'
 const style = {textDecoration: 'underline'}
 const AboutMe = () => (
   <div className="about-me-container">
-    <p className="about-me-text">
+    <div className="about-me-text">
       <p>
         I'm a software engineer.
         I found my passion in graduate school, where I hold a
@@ -22,7 +22,7 @@ const AboutMe = () => (
         . If you like my answers,
         feel free to upvote them. I love internet points.
       </p>
-    </p>
+    </div>
   </div>
 )
 

@@ -43,3 +43,17 @@
 
 .project-image-container {
   min-width: 310px; }
+
+@media screen and (max-width: 800px) {
+  .project-container {
+    width: 100vw; }
+  .project-subcontainer-image {
+    min-width: 100vw;
+    max-width: 100vw;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center; }
+  .project-subcontainer-text {
+    margin: 0.5em 0.2em 0.2em 0.2em; }
+  .project-image-picture {
+    max-width: 100vw; } }
