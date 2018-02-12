@@ -68,7 +68,7 @@
     &-container {
       flex-direction: column-reverse;
       @include flex-center;
-      padding: 0em 0em 0.5em 0.5em;
+      padding: 0em 0em 0.5em 0em;
     }
     &-subcontainer {
       @include flex-center

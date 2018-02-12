@@ -59,19 +59,26 @@
 
 @media screen and (max-width: 800px) {
   .project-container {
-    width: 100vw;
+    padding: 0px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .project-subcontainer {
+    margin: 0px;
+    padding-top: 2em;
   }
   .project-subcontainer-image {
-    min-width: 100vw;
-    max-width: 100vw;
+    min-width: 100%;
+    max-width: 100%;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
   }
   .project-subcontainer-text {
-    margin: 0.5em 0.2em 0.2em 0.2em;
+    margin: 0.5em 0em 0.2em 0em;
   }
   .project-image-picture {
-    max-width: 100vw;
+    max-width: 100%;
+    overflow:hidden;
   }
 }
