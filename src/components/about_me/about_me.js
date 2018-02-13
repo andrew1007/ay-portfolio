@@ -16,7 +16,7 @@ const AboutMe = () => (
         I spend my days programming and tutoring. I also like going on
         Stack Overflow and helping fellow programmers with their JavaScript and
         React code. Check out my profile {" "}
-        <a href="https://stackoverflow.com/users/4385889/andrew" target="_blank" style={style}>
+        <a href="https://stackoverflow.com/users/4385889/andrew" target="_blank" rel="noopener noreferrer" style={style}>
          {'here'}
         </a>
         . If you like my answers,
