@@ -25,7 +25,7 @@ allProjects.set(<ReactMemory/>, [null, null])
 const ProjectsContainer = _ => {
   let projectArray = Array.from(allProjects).map(([description, [image, url]]) => {
     let projectProps = {image, description, url}
-    projectProps['show'] = image === "portfolio.jpg" ? false : true
+    projectProps['show'] = (image === "portfolio.jpg") ? false : true
     return <Project key={image} {...projectProps} />
   })
   if (projectArray.length % 2 !== 0) {

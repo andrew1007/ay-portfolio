@@ -7,7 +7,8 @@ const ReactMemory = _ => {
         React Memory
       </h2>
       <p className='project-description-text'>
-        A card matching came. Flip over cards and try to match values. Made with React.js (duh) with best practices in mind.
+        A card matching came. Flip over cards and try to match values.
+        Made with React.js (duh) with best practices in mind.
       </p>
     </div>
   )
