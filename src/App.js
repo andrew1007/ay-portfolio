@@ -12,8 +12,8 @@ containers.set(<IntroContainer/>, "intro-container")
 containers.set(<SkillsContainer/>, "skills-container")
 containers.set(<ProjectsContainer/>, "projects-container")
 
-const App = _ => {
-  const _showId = id => {
+class App extends React.Component {
+  _showId(id) {
     $(`#${id}`).removeClass("hidden-true").addClass("hidden-false")
     if (window.pageYOffset > 0) {
       $(".navbar-hidden-true").removeClass("navbar-hidden-true")
@@ -21,53 +21,55 @@ const App = _ => {
     }
   }
 
-  const _hideId = id => {
+  _hideId(id) {
     $(`#${id}`).removeClass("hidden-false").addClass("hidden-true")
       $(".navbar-hidden-true").removeClass("navbar-hidden-true")
       .addClass("navbar-hidden-false")
   }
 
-  const _showNavBackground = () => {
+  _showNavBackground() {
     $(`#navbar-container`).removeClass("navbar-hidden-true")
     .addClass("navbar-hidden-false")
     $(".navbar-trasparent-link-true").removeClass("navbar-trasparent-link-true")
     .addClass("navbar-trasparent-link-false")
   }
 
-  const _hideNavBackground = () => {
+  _hideNavBackground() {
     $(`#navbar-container`).removeClass("navbar-hidden-false")
     .addClass("navbar-hidden-true")
     $(".navbar-trasparent-link-false").removeClass("navbar-trasparent-link-false")
     .addClass("navbar-trasparent-link-true")
   }
 
-  const renderContainers = Array.from(containers).map(([component, id], idx) => {
-    return (
+  get containers() {
+    return Array.from(containers).map(([component, id], idx) =>
       <Waypoint
-        onEnter={() => _showId(id)}
-        onLeave={() => _hideId(id)}
+        onEnter={() => this._showId(id)}
+        onLeave={() => this._hideId(id)}
         key={idx}
         >
-          <div id={id} className="hidden-true">
-            {component}
-          </div>
-        </Waypoint>
-      )
-  })
-
-  return (
-    <div className="App">
-      <Waypoint
-        onLeave={() => _showNavBackground()}
-        onEnter={() => _hideNavBackground()}
-        >
-        </Waypoint>
-      <div id="nav-container">
-        <NavBar/>
+        <div id={id} className="hidden-true">
+          {component}
+        </div>
+      </Waypoint>
+    )
+  }
+  
+  render() {
+    return (
+      <div className="App">
+        <Waypoint
+          onLeave={() => this._showNavBackground()}
+          onEnter={() => this._hideNavBackground()}
+          >
+          </Waypoint>
+        <div id="nav-container">
+          <NavBar/>
+        </div>
+        {this.containers}
       </div>
-      {renderContainers}
-    </div>
-  );
+    );
+  }
 }
 
 export default App

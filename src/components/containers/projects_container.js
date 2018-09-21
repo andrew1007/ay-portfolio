@@ -8,6 +8,7 @@ import HayaSushi from '../project_description/haya_sushi'
 import FillerDescription from '../project_description/filler_description'
 import Portfolio from '../project_description/portfolio'
 import OnImagesLoaded from '../project_description/on_images_loaded'
+import Tansaki from '../project_description/tansaki'
 // import ReactMemory from '../project_description/react_memory'
 
 const allProjects = new Map()
@@ -15,18 +16,18 @@ const allProjects = new Map()
 //keys are texts components
 //values are images
 allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
+allProjects.set(<Tansaki />, [null, null])
 allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuapp.com/#/session"])
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
-allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/SearchAndSort/#/bsearch"])
 allProjects.set(<Portfolio/>, [null, null])
+allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/SearchAndSort/#/bsearch"])
 allProjects.set(<HayaSushi/>, ["haya-sushi.jpg", "https://haya-sushi.herokuapp.com/"])
 // allProjects.set(<ReactMemory/>, [null, null])
 
 const ProjectsContainer = _ => {
   let projectArray = Array.from(allProjects).map(([description, [image, url]]) => {
     let projectProps = {image, description, url}
-    projectProps['show'] = (image === "portfolio.jpg") ? false : true
-    return <Project key={image} {...projectProps} />
+    return <Project key={Math.random()} {...projectProps} />
   })
   if (projectArray.length % 2 !== 0) {
     let fillProps = {key: 'fill', image: null, url: null, description: <FillerDescription/>}
