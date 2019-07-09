@@ -21,7 +21,7 @@ allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuap
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
 allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
 allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.me/SearchAndSort/#/bsearch"])
-allProjects.set(<HayaSushi/>, ["haya-sushi.jpg", "https://haya-sushi.herokuapp.com/"])
+// allProjects.set(<HayaSushi/>, ["haya-sushi.jpg", "https://haya-sushi.herokuapp.com/"])
 // allProjects.set(<ReactMemory/>, [null, null])
 
 const ProjectsContainer = _ => {

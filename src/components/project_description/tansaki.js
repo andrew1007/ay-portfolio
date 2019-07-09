@@ -11,10 +11,11 @@ const params = [
 
 const headerStyle = {
   minWidth: 310,
-  minHeight: 340,
+  minHeight: 300,
   border: '1px solid white',
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
+  justifyContent: 'center'
 }
 
 const Tansaki = () => {

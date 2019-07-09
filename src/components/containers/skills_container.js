@@ -9,15 +9,15 @@ const allSkills = new Map()
 //keys are skill name
 //if you want to render svg, import that instead of className
 allSkills.set("React.js + Redux", "icon-reactjs")
-allSkills.set("Redux Saga", ReduxSaga)
 allSkills.set("ES6 + ES7", "icon-javascript")
 allSkills.set("TypeScript", typeScript)
-allSkills.set("Immutable.js", Immutable)
-allSkills.set("d3", d3)
 allSkills.set("Ruby on Rails", "icon-ruby-on-rails")
-allSkills.set("Sass", "icon-sass")
 allSkills.set("Ruby", "icon-ruby")
 allSkills.set("PostgreSQL", "icon-postgres")
+allSkills.set("Immutable.js", Immutable)
+allSkills.set("Sass", "icon-sass")
+allSkills.set("d3", d3)
+allSkills.set("Redux Saga", ReduxSaga)
 
 const SkillsContainer = _ => {
   const skillsArray = Array.from(allSkills).map(([name, icon]) => {
