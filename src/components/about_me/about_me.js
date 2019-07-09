@@ -1,6 +1,6 @@
 import React from 'react'
 
-const style = {textDecoration: 'underline'}
+const style = { textDecoration: 'underline' }
 const AboutMe = () => (
   <div className="about-me-container">
     <div className="about-me-text">
@@ -12,14 +12,10 @@ const AboutMe = () => (
         I switched careers.
       </p>
       <p>
-        I am a full stack developer at {" "}
-        <a href="https://www.groove.co/" target="_blank" rel="noopener noreferrer" style={style}>
-          Groove.co
-        </a>
-        . My job is full stack, but my concentration is in front end development with technologies that I love: React and Redux.
+        My concentration is in front end development with technologies that I love: React and Redux.
       </p>
       <p>
-        My job is also my hobby. I spend my free time programming personal projects. 
+        My occupation is also my hobby. I spend my free time coding up personal projects.
         I also frequent Stack Overflow and helping fellow programmers with their JavaScript and
         React code. Check out my profile {" "}
         <a href="https://stackoverflow.com/users/4385889/andrew" target="_blank" rel="noopener noreferrer" style={style}>

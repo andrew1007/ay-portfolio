@@ -8,7 +8,7 @@ linksMap.set("LinkedIn", ["https://www.linkedin.com/in/andrewyueh/", "fa fa-link
 linksMap.set("yueh.andrew@gmail.com", ["mailto:yueh.andrew@gmail.com", "fa fa-envelope-o fa-2x"] )
 linksMap.set("Resume", [require('../../images/resume.pdf'), "fa fa-file-pdf-o fa-2x resume"])
 
-const Links = (props) => {
+const Links = _ => {
 
   const links = Array.from(linksMap).map(([name, data]) => {
     let [link, icon] = data
