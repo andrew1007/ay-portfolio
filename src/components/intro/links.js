@@ -2,6 +2,8 @@ import React from 'react'
 import Link from './link'
 
 const linksMap = new Map()
+
+linksMap.set("Stack Overflow", ["https://stackoverflow.com/users/4385889/andrew?tab=profile", "fa fa-stack-overflow fa-2x"])
 linksMap.set("React.js Blog", ["http://www.andrewyueh.blogspot.com/", "fa fa-rss fa-2x"])
 linksMap.set("Github", ["https://github.com/andrew1007", "fa fa-github fa-3x"])
 linksMap.set("LinkedIn", ["https://www.linkedin.com/in/andrewyueh/", "fa fa-linkedin fa-2x"])
