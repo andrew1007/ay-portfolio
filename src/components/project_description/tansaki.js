@@ -9,19 +9,10 @@ const params = [
     'JSON web token (JWT) user authentication',
 ].map(entry => <li style={{ marginBottom: 5 }}>{entry}</li>)
 
-const headerStyle = {
-  minWidth: 310,
-  minHeight: 300,
-  border: '1px solid white',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center'
-}
-
 const Tansaki = () => {
   return (
     <div>
-      <h2 style={headerStyle}>
+      <h2>
         Tansaki (Closed sourced and in development)
       </h2>
       <p className="project-description-text">

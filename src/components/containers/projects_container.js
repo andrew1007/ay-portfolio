@@ -16,7 +16,7 @@ const allProjects = new Map()
 //keys are texts components
 //values are images
 allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
-allProjects.set(<Tansaki />, [null, null])
+allProjects.set(<Tansaki />, ["tansaki.jpg", null])
 allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuapp.com/#/session"])
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
 allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
