@@ -22,7 +22,7 @@ const NavBar = _ => {
   })
 
   const resume =
-    <a target="_blank" href={require('../../images/resume.pdf')}>
+    <a target="_blank" href={require('../../resources/andrew-yueh-resume.pdf')}>
       <span className="navbar-transparent-link-true">
         Resume
       </span>
