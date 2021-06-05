@@ -1,27 +1,20 @@
 import React from 'react'
 
 const params = [
-    'React + Redux',
-    'TypeScript',
-    'JSS styling',
-    'Rails + PostgreSQL',
-    'Git workflow + version control',
+    'TypeScript + React + Redux',
+    'Rails + PostgreSQL + Redis',
     'JSON web token (JWT) user authentication',
+    'Google OAuth login'
 ].map(entry => <li style={{ marginBottom: 5 }}>{entry}</li>)
 
 const Tansaki = () => {
   return (
     <div>
       <h2>
-        Tansaki (Closed sourced and in development)
+        Tansaki
       </h2>
       <p className="project-description-text">
-        This isn't a demo project. I'm going to
-        do a real release, because it offers a service nobody else has 
-        made: automatic generation of comprehensive anime recommendations.
-        It started off as a basic site, But I decided to add so many 
-        fun features that a 1 month project has turned into a 
-        +6 month (and beyond) project. What I've utilized and built so far:
+        An anime discovery website with production-level features!
         <ul>{params}</ul>
       </p>
     </div>
