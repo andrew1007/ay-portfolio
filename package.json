@@ -9,7 +9,7 @@
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "^1.0.10",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.5.4",
     "react-waypoint": "^7.0.4"
   },
