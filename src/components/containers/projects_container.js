@@ -12,7 +12,7 @@ const allProjects = new Map()
 //directory of image file is abstracted out. see src/project/project_image.js
 //keys are texts components
 //values are images
-allProjects.set(<Book />, ["book.jpg", null])
+allProjects.set(<Book />, ["book.jpg", "https://www.amazon.com/JavaScript-Coding-Teens-Beginners-Developing/dp/1648761119"])
 allProjects.set(<Tansaki />, ["tansaki.jpg", "https://tansaki.io"])
 allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
