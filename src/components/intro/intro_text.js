@@ -6,7 +6,7 @@ const IntroText = () => (
       Hi there
     </h1>
     <p className="intro-text-body">
-      My name is Andrew Yueh. I'm a software engineer
+      My name is Andrew Yueh. I'm a software engineer.
     </p>
   </div>
 )

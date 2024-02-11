@@ -6,13 +6,15 @@ import FillerDescription from '../project_description/filler_description'
 import Portfolio from '../project_description/portfolio'
 import OnImagesLoaded from '../project_description/on_images_loaded'
 import Tansaki from '../project_description/tansaki'
+import Book from '../project_description/Book'
 
 const allProjects = new Map()
 //directory of image file is abstracted out. see src/project/project_image.js
 //keys are texts components
 //values are images
-allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
+allProjects.set(<Book />, ["book.jpg", null])
 allProjects.set(<Tansaki />, ["tansaki.jpg", "https://tansaki.io"])
+allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
 allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
 

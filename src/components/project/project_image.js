@@ -9,6 +9,7 @@ const ProjectImage = (props) => {
         className="project-image-picture"
         src={source}
         alt=""
+        width="501"
         />
     </div>
   )
