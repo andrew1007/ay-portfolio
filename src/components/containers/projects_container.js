@@ -17,10 +17,8 @@ const allProjects = new Map()
 //values are images
 allProjects.set(<OnImagesLoaded/>, ["npm_logo.jpg", "https://www.npmjs.com/package/react-on-images-loaded"])
 allProjects.set(<Tansaki />, ["tansaki.jpg", "https://tansaki.io"])
-allProjects.set(<InterestMe/>, ["interest_me.jpg", "https://interest-me.herokuapp.com/#/session"])
 allProjects.set(<FireworksJS/>, ["fireworks_js.gif", "https://andrew1007.github.io/fireworksJS/"])
 allProjects.set(<Portfolio/>, ["portfolio.jpg", null])
-allProjects.set(<SearchAndSort/>, ["search_and_sort.jpg", "http://joycechau.net/SearchAndSort/#/quicksort"])
 // allProjects.set(<HayaSushi/>, ["haya-sushi.jpg", "https://haya-sushi.herokuapp.com/"])
 // allProjects.set(<ReactMemory/>, [null, null])
 
